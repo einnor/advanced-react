@@ -36,6 +36,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-react": "^7.12.4",
     "jest": "^24.7.1",
+    "react-test-renderer": "^16.8.6",
     "webpack-cli": "^3.3.0"
   },
   "dependencies": {
