@@ -1,7 +1,13 @@
 const path = require('path');
 
 const config = {
-  entry: ['@babel/polyfill', './lib/components/Index.js'],
+  resolve: {
+    alias: {
+      Renderers: path.resolve(__dirname, 'lib/renderers'),
+      Components: path.resolve(__dirname, 'lib/components'),
+    }
+  },
+  entry: ['@babel/polyfill', './lib/renderers/dom.js'],
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js'
