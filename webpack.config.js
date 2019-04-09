@@ -5,7 +5,12 @@ const config = {
     alias: {
       Renderers: path.resolve(__dirname, 'lib/renderers/'),
       Components: path.resolve(__dirname, 'lib/components/'),
-    }
+    },
+    modules: [
+      path.resolve('./lib/'),
+      path.resolve('./node_modules/'),
+
+    ],
   },
   entry: ['@babel/polyfill', './lib/renderers/dom.js'],
   output: {
