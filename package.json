@@ -8,6 +8,12 @@
     "webpack": "webpack -wd",
     "test": "jest --watch"
   },
+  "jest": {
+    "moduleNameMapper": {
+      "^Components(.*)$": "<rootDir>/lib/components/$1",
+      "^Renderers(.*)$": "<rootDir>/lib/renderers/$1"
+    }
+  },
   "babel": {
     "presets": [
       "@babel/preset-react",

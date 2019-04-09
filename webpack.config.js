@@ -3,8 +3,8 @@ const path = require('path');
 const config = {
   resolve: {
     alias: {
-      Renderers: path.resolve(__dirname, 'lib/renderers'),
-      Components: path.resolve(__dirname, 'lib/components'),
+      Renderers: path.resolve(__dirname, 'lib/renderers/'),
+      Components: path.resolve(__dirname, 'lib/components/'),
     }
   },
   entry: ['@babel/polyfill', './lib/renderers/dom.js'],
