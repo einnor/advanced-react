@@ -8,7 +8,8 @@
     "reload": "pm2 reload all",
     "webpack": "webpack -wd",
     "test": "jest --watch",
-    "verify-tests": "jest --coverage"
+    "verify-tests": "jest --coverage",
+    "build-webpack": "webpack -p"
   },
   "jest": {
     "moduleNameMapper": {
