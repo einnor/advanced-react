@@ -2,3 +2,4 @@ node_modules
 coverage
 public/vendor.js
 public/app.js
+build
