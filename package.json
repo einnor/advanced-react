@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "NODE_PATH=./lib pm2 start lib/server.js --watch --interpreter babel-node",
+    "reload": "pm2 reload all",
     "webpack": "webpack -wd",
     "test": "jest --watch",
     "verify-tests": "jest --coverage"
